@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Main\MainThread.cpp">
+      <Filter>MainThread</Filter>
+    </ClCompile>
+    <ClCompile Include="SIPConsole.cpp" />
+    <ClCompile Include="SipRoute\SipServiceRelay.cpp">
+      <Filter>SipRoute</Filter>
+    </ClCompile>
+    <ClCompile Include="WinService\WinService.cpp">
+      <Filter>WinService</Filter>
+    </ClCompile>
+    <ClCompile Include="WinService\WinServiceProc.cpp">
+      <Filter>WinService</Filter>
+    </ClCompile>
+    <ClCompile Include="RegMgrCom\SipDomain.cpp">
+      <Filter>PltMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="RegMgrCom\UASSipRegMgr.cpp">
+      <Filter>PltMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="SipServiceCom\SIPService.cpp">
+      <Filter>SipService</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+      <Filter>Common\Utils\TinyXml2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\SDPParser\SDPParser.cpp">
+      <Filter>Common\SDPParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Log\Log.cpp">
+      <Filter>Common\Utils\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\Module.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQ.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQS.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\Router.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemBlock.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPool.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPoolUnit.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMap.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMapFile.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\SharedVarQueue.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Common\ControllableThread.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Utils.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\MainThread.h">
+      <Filter>MainThread</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPConsole.h" />
+    <ClInclude Include="SipRoute\SipServiceRelay.h">
+      <Filter>SipRoute</Filter>
+    </ClInclude>
+    <ClInclude Include="WinService\WinService.h">
+      <Filter>WinService</Filter>
+    </ClInclude>
+    <ClInclude Include="WinService\WinServiceProc.h">
+      <Filter>WinService</Filter>
+    </ClInclude>
+    <ClInclude Include="RegMgrCom\EventTimer.hpp">
+      <Filter>PltMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="RegMgrCom\SipDomain.h">
+      <Filter>PltMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="RegMgrCom\UASSipRegMgr.h">
+      <Filter>PltMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="SipServiceCom\SipMsgMaker.hpp">
+      <Filter>SipService</Filter>
+    </ClInclude>
+    <ClInclude Include="SipServiceCom\SIPService.h">
+      <Filter>SipService</Filter>
+    </ClInclude>
+    <ClInclude Include="SipServiceCom\SIPUnifiedMsg.h">
+      <Filter>SipService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h">
+      <Filter>Common\Utils\TinyXml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Json\json.hpp">
+      <Filter>Common\Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\SDPParser\SDPParser.h">
+      <Filter>Common\SDPParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Log\ErrorMessage.h">
+      <Filter>Common\Utils\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Log\Log.h">
+      <Filter>Common\Utils\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\Module.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQ.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQS.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\Router.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\BigFile.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MapWithLock.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemBlock.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPool.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPoolUnit.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMap.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMapFile.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\Queue.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\SharedVarQueue.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\SimpleQueue.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Common\ControllableThread.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Common\TimeLimitMap.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Common\AppSetting.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{aa3a2929-0a1a-4936-a678-97220d9f0ddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeadFiles">
+      <UniqueIdentifier>{caa5b53f-5cc8-4673-9bd7-417880abdc7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utils">
+      <UniqueIdentifier>{a369e0db-9779-4aa0-af84-c75d92529e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utils\TinyXml2">
+      <UniqueIdentifier>{8b3e8b7d-1ab8-4a42-8b52-68bb297fbc50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{26a5aa34-256a-4c06-bb3c-a4d6286baf70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utils\Log">
+      <UniqueIdentifier>{03040a70-11b1-493b-b5ff-c66fca866a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{4dfd31d7-d4c9-4a64-9d44-94fa46ba751b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainThread">
+      <UniqueIdentifier>{af3e46bd-3b7a-440f-85c8-2c0459326518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utils\Json">
+      <UniqueIdentifier>{036d0a5b-c12d-4228-b258-5be8d0a25fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SipRoute">
+      <UniqueIdentifier>{81f78589-9e9f-430a-a545-70685773deb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinService">
+      <UniqueIdentifier>{cebaae3e-1fc4-4b66-b860-7419fa93ade2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\SDPParser">
+      <UniqueIdentifier>{60968b7b-73a0-4ef1-bb5c-3a67e9c30296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PltMgmt">
+      <UniqueIdentifier>{e2bde78c-c82e-481c-bc5a-a10e6da0d5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SipService">
+      <UniqueIdentifier>{5da5fb30-0533-4f84-af04-ab27e30990d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

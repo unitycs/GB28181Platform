@@ -1,0 +1,100 @@
+﻿{
+  "app_name": "GB28181.Platform",
+  "app_author": "HUS-GB28181-PLT",
+  "app_ver": "1.0",
+  "app_encoding": "gb2312",
+  "app_work_mode": 2,
+  "main": {
+    "current_domian": {
+      "name": "Honeywell-GB28181",
+      "needauth": false,
+      "expiry": 3600,
+      "keepalive": 30,
+      "device_id": "44198700003000000000",
+      "ip": "44.190.0.253",
+      "port": 5060,
+      "port2": 50601,
+      "username": "",
+      "password": "12345678"
+    },
+    "loginfo": {
+      "app_root_dir": "server",
+      "sipcom_root_dir": "sipcom",
+      "cur_dir": "cur",
+      "today_dir": "today",
+      "history_dir": "history",
+      "level": 0,
+      "max_size": 1048576,
+      "keeptime": 30
+    },
+    "network": {
+      "download_rate": 4,
+      "firewall_ip": "",
+      "firewall_port": 8888
+    },
+    "devices_config_files_info": {
+      "hus_devices_config": "DeviceConfiguration.json",
+	  "thirdpart_devices_list":"DeviceList.xml",
+      "config_dir_name": "DeviceConfig",
+	  "db_file_name": "Hus_Gb28181_Sqlite3.db"
+    },
+    "sharedmemory": {
+      "nsize": 10,
+      "app_to_sipcom": "Server2SIP",
+      "sipcom_to_app": "SIP2Server"
+    }
+  },
+  "upper_domian": [
+    {
+      "name": "test-up-dahua-plt-1",
+      "needauth": false,
+      "device_id": "44190000002000000000",
+      "ip": "44.190.0.21",
+      "port": 8700,
+      "username": "",
+      "password": "12345678",
+      "expiry": 3600,
+      "keepalive": 30
+    },
+    {
+      "name": "upper-plt-2",
+      "needauth": false,
+      "device_id": "44010000002000000001",
+      "ip": "127.0.0.1",
+      "port": 7777,
+      "username": "",
+      "password": "12345678",
+      "expiry": 3600,
+      "keepalive": 30
+    }
+  ],
+  "lower_domian": [
+    {
+      "name": "lower-plt-1",
+      "needauth": false,
+      "device_id": "44198700004000000000",
+      "ip": "44.196.0.28",
+      "port": 7700,
+      "username": "",
+      "password": "12345678",
+      "expiry": 3600,
+      "keepalive": 30
+    },
+    {
+      "name": "lower-plt-2",
+      "needauth": false,
+      "device_id": "44010000002000000001",
+      "ip": "127.0.0.1",
+      "port": 7777,
+      "username": "",
+      "password": "12345678",
+      "expiry": 3600,
+      "keepalive": 30
+    }
+
+  ],
+  "routing": [
+    [ "44190000002000000000", "44198700004000000000" ]
+  ]
+
+}

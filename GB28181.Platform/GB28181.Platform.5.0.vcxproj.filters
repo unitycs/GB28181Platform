@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main\WinService.cpp" />
+    <ClCompile Include="ServerConsole.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="RTSPCom\RTSPCom.cpp">
+      <Filter>RTSPCom</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\RTSPParser.cpp">
+      <Filter>RTSPCom</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\UnifiedMessage.cpp">
+      <Filter>SipCom</Filter>
+    </ClCompile>
+    <ClCompile Include="SIPCom\SIPCom.cpp">
+      <Filter>SipCom</Filter>
+    </ClCompile>
+    <ClCompile Include="SIPCom\SIPUnit.cpp">
+      <Filter>SipCom</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\TCPClient.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DevInfo\CivilCode.cpp">
+      <Filter>DevInfoCom</Filter>
+    </ClCompile>
+    <ClCompile Include="DevInfo\DevInfo.cpp">
+      <Filter>DevInfoCom</Filter>
+    </ClCompile>
+    <ClCompile Include="SIPCom\SipUnified.cpp">
+      <Filter>SipCom</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DataStore.cpp">
+      <Filter>DMCom</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\SQLiteModule.cpp">
+      <Filter>DMCom\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\sqlite\sqlite3.c">
+      <Filter>DMCom\DB\sqlite3190300</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\utility.cpp">
+      <Filter>DMCom\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\SuperFileProc.cpp">
+      <Filter>DMCom\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\SearchObject.cpp">
+      <Filter>DMCom\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\threadSync.cpp">
+      <Filter>DMCom\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DataStoreBase.cpp">
+      <Filter>DMCom</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\SQliteORM.cpp">
+      <Filter>DMCom\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager\RecordAdaptor\GBDeviceRecord.cpp">
+      <Filter>DMCom\ObjectAdaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\MainThread.cpp">
+      <Filter>MainThread</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKRecordSearcher.cpp">
+      <Filter>SDKCom\HUSSDK\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\EC\ECClient.cpp">
+      <Filter>SDKCom\HUSSDK\EC</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKDeviceCtrlMgr.cpp">
+      <Filter>SDKCom\HUSSDK\DeviceControl</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\RTSPTransMgrBase.cpp">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgrRec.cpp">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgr.cpp">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgrBroadcast.cpp">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgrThird.cpp">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSPCom\RTSPSessionBuilder.cpp">
+      <Filter>RTSPCom</Filter>
+    </ClCompile>
+    <ClCompile Include="SIPCom\BodyBuilder.cpp">
+      <Filter>DevInfoCom\Bodybuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="DevInfo\CatalogLayer.cpp">
+      <Filter>DevInfoCom\Catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="DevInfo\ChannelInfo.cpp">
+      <Filter>DevInfoCom\Catalog</Filter>
+    </ClCompile>
+    <ClCompile Include="DevInfo\SubscribeList.cpp">
+      <Filter>DevInfoCom\Subscription</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKCom.cpp">
+      <Filter>SDKCom</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKDevInfo.cpp">
+      <Filter>SDKCom</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKDecoder.cpp">
+      <Filter>SDKCom\HUSSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKEventsHandler.cpp">
+      <Filter>SDKCom\HUSSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKSiteProxy.cpp">
+      <Filter>SDKCom</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKCom\SDKInfoSearcherMgr.cpp">
+      <Filter>SDKCom\HUSSDK\VideoRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+      <Filter>Common\Tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\SDPParser\SDPParser.cpp">
+      <Filter>Common\SDPParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Log\Log.cpp">
+      <Filter>Common\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\Module.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQ.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQS.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Module\Router.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemBlock.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPool.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPoolUnit.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMap.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMapFile.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Memory\SharedVarQueue.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Socket\RawDataPkgParser.cpp">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GB28181.Dependency\Socket\SmartSocket.cpp">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="GBAdaptorCom\GBAdaptorCom.cpp">
+      <Filter>GBAdaptorCom</Filter>
+    </ClCompile>
+    <ClCompile Include="GBAdaptorCom\UASTCP.cpp">
+      <Filter>GBAdaptorCom</Filter>
+    </ClCompile>
+    <ClCompile Include="GBAdaptorCom\IUAS.cpp">
+      <Filter>GBAdaptorCom\Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main\WinService.h" />
+    <ClInclude Include="ServerConsole.h" />
+    <ClInclude Include="RTSPCom\RTSPCom.h">
+      <Filter>RTSPCom</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\RTSPParser.h">
+      <Filter>RTSPCom</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\UnifiedMessage.h">
+      <Filter>SipCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPCom\SIPCom.h">
+      <Filter>SipCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPCom\SIPUnit.h">
+      <Filter>SipCom</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\TCPClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="DevInfo\CivilCode.h">
+      <Filter>DevInfoCom</Filter>
+    </ClInclude>
+    <ClInclude Include="DevInfo\DevInfo.h">
+      <Filter>DevInfoCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPCom\SipUnified.h">
+      <Filter>SipCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPCom\SipRecordBase.h">
+      <Filter>SipCom</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DataStore.h">
+      <Filter>DMCom</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\db_common.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\SQLiteModule.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\TaskImpl.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\sqlite\sqlite3.h">
+      <Filter>DMCom\DB\sqlite3190300</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\sqlite\sqlite3ext.h">
+      <Filter>DMCom\DB\sqlite3190300</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\utility.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\SuperFileProc.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\SearchObject.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\threadSync.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DataStoreBase.h">
+      <Filter>DMCom</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\SQliteORM.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\SQLTextMaker.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\DB\db_tabledef.h">
+      <Filter>DMCom\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager\RecordAdaptor\GBDeviceRecord.h">
+      <Filter>DMCom\ObjectAdaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKRecordSearcher.h">
+      <Filter>SDKCom\HUSSDK\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\EC\ECClient.h">
+      <Filter>SDKCom\HUSSDK\EC</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKDeviceCtrlMgr.h">
+      <Filter>SDKCom\HUSSDK\DeviceControl</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgrThird.h">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\RTSPTransMgrBase.h">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgrRec.h">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgr.h">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgrBroadcast.h">
+      <Filter>RTSPCom\RTSPTrans</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSPCom\RTSPSessionBuilder.h">
+      <Filter>RTSPCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPCom\BodyBuilder.h">
+      <Filter>DevInfoCom\Bodybuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPCom\XMLBodyBuilder.h">
+      <Filter>DevInfoCom\Bodybuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="SIPCom\CatalogConfig.h">
+      <Filter>DevInfoCom\Catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="DevInfo\CatalogLayer.h">
+      <Filter>DevInfoCom\Catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="DevInfo\ChannelInfo.h">
+      <Filter>DevInfoCom\Catalog</Filter>
+    </ClInclude>
+    <ClInclude Include="DevInfo\SubscribeList.h">
+      <Filter>DevInfoCom\Subscription</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKCom.h">
+      <Filter>SDKCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKDevInfo.h">
+      <Filter>SDKCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\HUSSDKUnified.h">
+      <Filter>SDKCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKDecoder.h">
+      <Filter>SDKCom\HUSSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKEventsHandler.h">
+      <Filter>SDKCom\HUSSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKSiteProxy.h">
+      <Filter>SDKCom</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKCom\SDKInfoSearcherMgr.h">
+      <Filter>SDKCom\HUSSDK\VideoRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h">
+      <Filter>Common\Tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\SDPParser\SDPParser.h">
+      <Filter>Common\SDPParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Log\ErrorMessage.h">
+      <Filter>Common\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Log\Log.h">
+      <Filter>Common\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\Module.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQ.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQS.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Module\Router.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\BigFile.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MapWithLock.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemBlock.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPool.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPoolUnit.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMap.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMapFile.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\Queue.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\SharedVarQueue.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Memory\SimpleQueue.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataFormat.hpp">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataPkgMaker.hpp">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataPkgParser.h">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataStream.hpp">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Socket\SmartSocket.h">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Socket\SocketDataMgr.hpp">
+      <Filter>GBAdaptorCom\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="GBAdaptorCom\GBAdaptorCom.h">
+      <Filter>GBAdaptorCom</Filter>
+    </ClInclude>
+    <ClInclude Include="GBAdaptorCom\UASTCP.h">
+      <Filter>GBAdaptorCom</Filter>
+    </ClInclude>
+    <ClInclude Include="GBAdaptorCom\IUAS.h">
+      <Filter>GBAdaptorCom\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GBAdaptorCom\typedef.h">
+      <Filter>GBAdaptorCom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Common\Utils.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GB28181.Dependency\Common\AppSetting.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ModOperation.h">
+      <Filter>HeadFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ServerConsole.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DeviceConfiguration.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="HeadFiles">
+      <UniqueIdentifier>{50e21f7b-3665-4630-84fe-dd10be2bbfe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{7b5d543f-1eef-4d54-9543-0a525a217fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{51687831-2f06-4e46-aae4-7d953e36f842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{5c35f5db-4db8-454b-917a-027e67ab4ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTSPCom">
+      <UniqueIdentifier>{cb2ae7ab-69e9-49c3-b9ed-6d069bfb7f99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utils">
+      <UniqueIdentifier>{19c95c01-e30a-4eb7-8374-5afc26bd064f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Tinyxml2">
+      <UniqueIdentifier>{313ef22a-2074-4ec9-913e-b194b9720618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Log">
+      <UniqueIdentifier>{ad0f9d0f-2cc6-476a-820a-a89972baf781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainThread">
+      <UniqueIdentifier>{524f3685-97da-46d2-a39e-86cbfbcea325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTSPCom\RTSPTrans">
+      <UniqueIdentifier>{cfc92c84-50b6-49a6-b962-46a7b3173e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\SDPParser">
+      <UniqueIdentifier>{7e4b2bf7-392b-4402-a6bb-c3402bd0a62d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SipCom">
+      <UniqueIdentifier>{eaf477bd-d173-4b4b-8aee-580594d9ca6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DevInfoCom">
+      <UniqueIdentifier>{5c517e7c-dae8-4a6b-a3b2-57765478dd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DevInfoCom\Catalog">
+      <UniqueIdentifier>{d6a6ddf5-a554-46db-a011-9c7497df6602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DevInfoCom\Bodybuilder">
+      <UniqueIdentifier>{be9289f3-0eed-43c5-8a91-4a50aaaa2f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DevInfoCom\Subscription">
+      <UniqueIdentifier>{fca46b79-2bac-4ab1-af5e-03744bb2d94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKCom">
+      <UniqueIdentifier>{6363847e-ae69-4766-a730-813707877a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKCom\HUSSDK">
+      <UniqueIdentifier>{26a95a7e-e68c-4515-aa9b-133277ad5c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKCom\HUSSDK\VideoRecord">
+      <UniqueIdentifier>{c95c04cb-1151-4a7c-bcf8-ef9cc442715b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKCom\HUSSDK\EC">
+      <UniqueIdentifier>{2244b351-37de-4036-9343-dcd426422de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKCom\HUSSDK\DeviceControl">
+      <UniqueIdentifier>{06519ea5-097b-4d1b-ae78-210ef8cbb4b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DMCom">
+      <UniqueIdentifier>{954243af-9494-4574-8907-4049e7c4d128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DMCom\DB">
+      <UniqueIdentifier>{204d87d4-179d-4046-b222-bb0cdd9434ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DMCom\ObjectAdaptor">
+      <UniqueIdentifier>{224d77b1-d109-4d45-ac45-501fca5a9bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GBAdaptorCom">
+      <UniqueIdentifier>{850a5da0-c3c4-4ae7-8893-c528e3510307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GBAdaptorCom\Socket">
+      <UniqueIdentifier>{62bd1d01-46fb-4c0a-91c7-4627df4723f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GBAdaptorCom\Interface">
+      <UniqueIdentifier>{8bd61930-c204-4032-977b-e7d9f25974a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DMCom\DB\sqlite3190300">
+      <UniqueIdentifier>{c5a2dca9-a071-4b16-b22a-bdda4be05106}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

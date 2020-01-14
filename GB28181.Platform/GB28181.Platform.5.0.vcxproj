@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B16AA507-E0B0-4E50-B153-61F1AA65A88E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ServerConsole</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectName>GB28181.Platform</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;SDK_VERSION_5_0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>set dstdir=C:\Program Files (x86)\Honeywell\HUS-GB28181Gateway-Down\
+copy /y $(OutputPath)$(TargetName)$(TargetExt) "%dstdir%$(TargetName)$(TargetExt)"
+copy /y $(OutputPath)$(TargetName).pdb "%dstdir%$(TargetName).pdb"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>set dstdir=C:\Program Files (x86)\Honeywell\HUS-GB28181Gateway-Down\
+copy /y $(OutputPath)GB28181.PLTD.App.exe "%dstdir%GB28181.PLTD.App.exe"
+copy /y $(OutputPath)GB28181.PLTD.App.pdb "%dstdir%GB28181.PLTD.App.pdb"
+copy /y $(OutputPath)GB28181.PLTD.SipCom.exe "%dstdir%GB28181.PLTD.SipCom.exe"
+copy /y $(OutputPath)GB28181.PLTD.SipCom.pdb "%dstdir%GB28181.PLTD.SipCom.pdb"
+copy /y $(OutputPath)osipparser2.dll "%dstdir%osipparser2.dll"
+copy /y $(OutputPath)osipparser2.pdb "%dstdir%osipparser2.pdb"
+copy /y $(OutputPath)osip2.dll "%dstdir%osip2.dll"
+copy /y $(OutputPath)osip2.pdb "%dstdir%osip2.pdb"
+copy /y $(OutputPath)GB28181.PLTD.DeviceInfoMgr.exe "%dstdir%GB28181.PLTD.DeviceInfoMgr.exe"
+copy /y $(OutputPath)GB28181.PLTD.DeviceInfoMgr.pdb "%dstdir%GB28181.PLTD.DeviceInfoMgr.pdb"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN_SERVICE;SDK_VERSION_5_0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>windowscodecs.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>set dstdir=C:\Program Files (x86)\Honeywell\HUS-GB28181Gateway-Down\
+copy /y $(OutputPath)$(TargetName)$(TargetExt) "%dstdir%$(TargetName)$(TargetExt)"
+copy /y $(OutputPath)$(TargetName).pdb "%dstdir%$(TargetName).pdb"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del /f ..\HusOutput\5.0\Release\*.dll
+del /f ..\HusOutput\5.0\Release\*.tlb
+copy /y ..\..\..\HUS5\Dependancy\bin\AdapterFactory\AdaptorFactory.dll ..\HusOutput\5.0\Release\AdaptorFactory.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\AdapterFactory\DeviceConfig.dll ..\HusOutput\5.0\Release\DeviceConfig.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\HUSCommunicationMsgBase.dll ..\HusOutput\5.0\Release\HUSCommunicationMsgBase.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\SiteImage.dll ..\HusOutput\5.0\Release\SiteImage.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\SiteImageAdaptor.dll ..\HusOutput\5.0\Release\SiteImageAdaptor.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\EventControl\VideoAdaptorWrapper.dll ..\HusOutput\5.0\Release\VideoAdaptorWrapper.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\SynchronizeClient.dll ..\HusOutput\5.0\Release\SynchronizeClient.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\EventControl\ECConnectionManager.dll ..\HusOutput\5.0\Release\ECConnectionManager.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\DataManager.Search.dll ..\HusOutput\5.0\Release\DataManager.Search.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\DataManager.Client.Contract.dll ..\HusOutput\5.0\Release\DataManager.Client.Contract.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\DataManager.Search.Contract.dll ..\HusOutput\5.0\Release\DataManager.Search.Contract.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\DataManager.Service.Contract.dll ..\HusOutput\5.0\Release\DataManager.Service.Contract.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\Site.WSProxy.dll ..\HusOutput\5.0\Release\Site.WSProxy.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\HUSCommunicationMsgDispatcher.dll ..\HusOutput\5.0\Release\HUSCommunicationMsgDispatcher.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\HUSClientCommunication.dll ..\HusOutput\5.0\Release\HUSClientCommunication.dll
+copy /y ..\..\..\HUS5\Dependancy\bin\DataManager\SynchronizeWSFileOperator.dll ..\HusOutput\5.0\Release\SynchronizeWSFileOperator.dll
+cd /d ..\HusOutput\5.0\Release\
+cd
+call BatchReg.bat tlb
+cd
+copy /y *.tlb $(ProjectDir)\tlbs\5.0\
+cd /d $(MSBuildProjectDirectory)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WIN_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>windowscodecs.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>set dstdir=C:\Program Files (x86)\Honeywell\HUS-GB28181Gateway-Down\
+copy /y $(OutputPath)GB28181.PLTD.App.exe "%dstdir%GB28181.PLTD.App.exe"
+copy /y $(OutputPath)GB28181.PLTD.App.pdb "%dstdir%GB28181.PLTD.App.pdb"
+copy /y $(OutputPath)GB28181.PLTD.SipCom.exe "%dstdir%GB28181.PLTD.SipCom.exe"
+copy /y $(OutputPath)GB28181.PLTD.SipCom.pdb "%dstdir%GB28181.PLTD.SipCom.pdb"
+copy /y $(OutputPath)osipparser2.dll "%dstdir%osipparser2.dll"
+copy /y $(OutputPath)osipparser2.pdb "%dstdir%osipparser2.pdb"
+copy /y $(OutputPath)osip2.dll "%dstdir%osip2.dll"
+copy /y $(OutputPath)osip2.pdb "%dstdir%osip2.pdb"
+copy /y $(OutputPath)GB28181.PLTD.DeviceInfoMgr.exe "%dstdir%GB28181.PLTD.DeviceInfoMgr.exe"
+copy /y $(OutputPath)GB28181.PLTD.DeviceInfoMgr.pdb "%dstdir%GB28181.PLTD.DeviceInfoMgr.pdb"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\DeviceConfiguration.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\GB28181.Dependency\Common\AppSetting.h" />
+    <ClInclude Include="..\GB28181.Dependency\Common\common.h" />
+    <ClInclude Include="..\GB28181.Dependency\Common\Utils.h" />
+    <ClInclude Include="..\GB28181.Dependency\Log\ErrorMessage.h" />
+    <ClInclude Include="..\GB28181.Dependency\Log\Log.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\BigFile.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MapWithLock.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemBlock.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPool.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPoolUnit.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMap.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMapFile.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\Queue.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\SharedVarQueue.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\SimpleQueue.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\Module.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQ.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQS.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\Router.h" />
+    <ClInclude Include="..\GB28181.Dependency\SDPParser\SDPParser.h" />
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataFormat.hpp" />
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataPkgMaker.hpp" />
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataPkgParser.h" />
+    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataStream.hpp" />
+    <ClInclude Include="..\GB28181.Dependency\Socket\SmartSocket.h" />
+    <ClInclude Include="..\GB28181.Dependency\Socket\SocketDataMgr.hpp" />
+    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h" />
+    <ClInclude Include="DataManager\DataStore.h" />
+    <ClInclude Include="DataManager\DataStoreBase.h" />
+    <ClInclude Include="DataManager\DB\db_tabledef.h" />
+    <ClInclude Include="DataManager\DB\SearchObject.h" />
+    <ClInclude Include="DataManager\DB\db_common.h" />
+    <ClInclude Include="DataManager\DB\SQLiteModule.h" />
+    <ClInclude Include="DataManager\DB\SQliteORM.h" />
+    <ClInclude Include="DataManager\DB\sqlite\sqlite3.h" />
+    <ClInclude Include="DataManager\DB\sqlite\sqlite3ext.h" />
+    <ClInclude Include="DataManager\DB\SQLTextMaker.h" />
+    <ClInclude Include="DataManager\DB\SuperFileProc.h" />
+    <ClInclude Include="DataManager\DB\TaskImpl.h" />
+    <ClInclude Include="DataManager\DB\threadSync.h" />
+    <ClInclude Include="DataManager\DB\utility.h" />
+    <ClInclude Include="DataManager\RecordAdaptor\GBDeviceRecord.h" />
+    <ClInclude Include="DevInfo\CatalogLayer.h" />
+    <ClInclude Include="DevInfo\ChannelInfo.h" />
+    <ClInclude Include="DevInfo\CivilCode.h" />
+    <ClInclude Include="DevInfo\DevInfo.h" />
+    <ClInclude Include="DevInfo\SubscribeList.h" />
+    <ClInclude Include="GBAdaptorCom\GBAdaptorCom.h" />
+    <ClInclude Include="GBAdaptorCom\IUAS.h" />
+    <ClInclude Include="GBAdaptorCom\typedef.h" />
+    <ClInclude Include="GBAdaptorCom\UASTCP.h" />
+    <ClInclude Include="Main\WinService.h" />
+    <ClInclude Include="Main\UnifiedMessage.h" />
+    <ClInclude Include="ModOperation.h" />
+    <ClInclude Include="RTSPCom\RTSPCom.h" />
+    <ClInclude Include="RTSPCom\RTSPParser.h" />
+    <ClInclude Include="RTSPCom\RTSPTransMgrBase.h" />
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgrRec.h" />
+    <ClInclude Include="RTSPCom\TCPClient.h" />
+    <ClInclude Include="RTSPCom\RTSPSessionBuilder.h" />
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgr.h" />
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgrBroadcast.h" />
+    <ClInclude Include="RTSPCom\RTSPTransSessionMgrThird.h" />
+    <ClInclude Include="SDKCom\EC\ECClient.h" />
+    <ClInclude Include="SDKCom\SDKDeviceCtrlMgr.h" />
+    <ClInclude Include="SDKCom\SDKEventsHandler.h" />
+    <ClInclude Include="SDKCom\SDKRecordSearcher.h" />
+    <ClInclude Include="SDKCom\HUSSDKUnified.h" />
+    <ClInclude Include="SDKCom\SDKCom.h" />
+    <ClInclude Include="SDKCom\SDKDecoder.h" />
+    <ClInclude Include="SDKCom\SDKInfoSearcherMgr.h" />
+    <ClInclude Include="SDKCom\SDKDevInfo.h" />
+    <ClInclude Include="SDKCom\SDKSiteProxy.h" />
+    <ClInclude Include="SIPCom\BodyBuilder.h" />
+    <ClInclude Include="SIPCom\CatalogConfig.h" />
+    <ClInclude Include="SIPCom\SIPCom.h" />
+    <ClInclude Include="SIPCom\XMLBodyBuilder.h" />
+    <ClInclude Include="SIPCom\SipRecordBase.h" />
+    <ClInclude Include="SIPCom\SipUnified.h" />
+    <ClInclude Include="SIPCom\SIPUnit.h" />
+    <ClInclude Include="ServerConsole.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GB28181.Dependency\Log\Log.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemBlock.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPool.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPoolUnit.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMap.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMapFile.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\SharedVarQueue.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\Module.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQ.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQS.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\Router.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\SDPParser\SDPParser.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Socket\RawDataPkgParser.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Socket\SmartSocket.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DataManager\DataStore.cpp" />
+    <ClCompile Include="DataManager\DataStoreBase.cpp" />
+    <ClCompile Include="DataManager\DB\SearchObject.cpp" />
+    <ClCompile Include="DataManager\DB\SQLiteModule.cpp" />
+    <ClCompile Include="DataManager\DB\SQliteORM.cpp" />
+    <ClCompile Include="DataManager\DB\sqlite\sqlite3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DataManager\DB\SuperFileProc.cpp" />
+    <ClCompile Include="DataManager\DB\threadSync.cpp" />
+    <ClCompile Include="DataManager\DB\utility.cpp" />
+    <ClCompile Include="DataManager\RecordAdaptor\GBDeviceRecord.cpp" />
+    <ClCompile Include="DevInfo\CatalogLayer.cpp" />
+    <ClCompile Include="DevInfo\ChannelInfo.cpp" />
+    <ClCompile Include="DevInfo\CivilCode.cpp" />
+    <ClCompile Include="DevInfo\DevInfo.cpp" />
+    <ClCompile Include="DevInfo\SubscribeList.cpp" />
+    <ClCompile Include="GBAdaptorCom\GBAdaptorCom.cpp" />
+    <ClCompile Include="GBAdaptorCom\IUAS.cpp" />
+    <ClCompile Include="GBAdaptorCom\UASTCP.cpp" />
+    <ClCompile Include="Main\MainThread.cpp" />
+    <ClCompile Include="Main\WinService.cpp" />
+    <ClCompile Include="Main\UnifiedMessage.cpp" />
+    <ClCompile Include="RTSPCom\RTSPCom.cpp" />
+    <ClCompile Include="RTSPCom\RTSPParser.cpp" />
+    <ClCompile Include="RTSPCom\RTSPTransMgrBase.cpp" />
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgrRec.cpp" />
+    <ClCompile Include="RTSPCom\TCPClient.cpp" />
+    <ClCompile Include="RTSPCom\RTSPSessionBuilder.cpp" />
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgr.cpp" />
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgrBroadcast.cpp" />
+    <ClCompile Include="RTSPCom\RTSPTransSessionMgrThird.cpp" />
+    <ClCompile Include="SDKCom\EC\ECClient.cpp" />
+    <ClCompile Include="SDKCom\SDKDeviceCtrlMgr.cpp" />
+    <ClCompile Include="SDKCom\SDKEventsHandler.cpp" />
+    <ClCompile Include="SDKCom\SDKRecordSearcher.cpp" />
+    <ClCompile Include="SDKCom\SDKCom.cpp" />
+    <ClCompile Include="SDKCom\SDKDecoder.cpp" />
+    <ClCompile Include="SDKCom\SDKInfoSearcherMgr.cpp" />
+    <ClCompile Include="SDKCom\SDKDevInfo.cpp" />
+    <ClCompile Include="SDKCom\SDKSiteProxy.cpp" />
+    <ClCompile Include="SIPCom\BodyBuilder.cpp" />
+    <ClCompile Include="SIPCom\SIPCom.cpp" />
+    <ClCompile Include="SIPCom\SipUnified.cpp" />
+    <ClCompile Include="SIPCom\SIPUnit.cpp" />
+    <ClCompile Include="ServerConsole.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ServerConsole.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GBUtils\GBUtils.vcxproj">
+      <Project>{8abf328a-9e7e-468d-affa-22ece37aca5f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WebServiceSDK\WebServiceSDK.vcxproj">
+      <Project>{3bf500f6-d0f0-4a75-8fe8-7de65e3a9462}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ServerConsole.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

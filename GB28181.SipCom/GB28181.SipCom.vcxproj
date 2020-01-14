@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E39CD99A-B217-4433-92FD-27287A9FF6D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SIPCom</RootNamespace>
+    <ProjectName>GB28181.SipCom</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;dnsapi.lib;windowscodecs.lib;Delayimp.lib;Qwave.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+	  set dstdir=C:\Program Files (x86)\Honeywell\HUS-GB28181Gateway-Down\
+		copy /y $(OutputPath)$(TargetName)$(TargetExt) "%dstdir%$(TargetName)$(TargetExt)"
+		copy /y $(OutputPath)$(TargetName).pdb "%dstdir%$(TargetName).pdb"
+		copy /y $(Solutiondir)Project.json "%dstdir%Project.json"
+	</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;dnsapi.lib;windowscodecs.lib;Delayimp.lib;Qwave.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;WIN_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;dnsapi.lib;windowscodecs.lib;Delayimp.lib;Qwave.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;WIN_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;dnsapi.lib;windowscodecs.lib;Delayimp.lib;Qwave.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\GB28181.Dependency\Common\AppSetting.h" />
+    <ClInclude Include="..\GB28181.Dependency\Common\common.h" />
+    <ClInclude Include="..\GB28181.Dependency\Common\ControllableThread.h" />
+    <ClInclude Include="..\GB28181.Dependency\Common\TimeLimitMap.h" />
+    <ClInclude Include="..\GB28181.Dependency\Json\json.hpp" />
+    <ClInclude Include="..\GB28181.Dependency\Log\ErrorMessage.h" />
+    <ClInclude Include="..\GB28181.Dependency\Log\Log.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\BigFile.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MapWithLock.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemBlock.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPool.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MemPoolUnit.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMap.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\MMapFile.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\Queue.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\SharedVarQueue.h" />
+    <ClInclude Include="..\GB28181.Dependency\Memory\SimpleQueue.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\Module.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQ.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQS.h" />
+    <ClInclude Include="..\GB28181.Dependency\Module\Router.h" />
+    <ClInclude Include="..\GB28181.Dependency\SDPParser\SDPParser.h" />
+    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h" />
+    <ClInclude Include="Common\Utils.h" />
+    <ClInclude Include="Main\MainThread.h" />
+    <ClInclude Include="RegMgrCom\EventTimer.hpp" />
+    <ClInclude Include="RegMgrCom\SipDomain.h" />
+    <ClInclude Include="RegMgrCom\UASSipRegMgr.h" />
+    <ClInclude Include="SIPConsole.h" />
+    <ClInclude Include="SipRoute\SipServiceRelay.h" />
+    <ClInclude Include="SipServiceCom\SipMsgMaker.hpp" />
+    <ClInclude Include="SipServiceCom\SIPService.h" />
+    <ClInclude Include="SipServiceCom\SIPUnifiedMsg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WinService\WinService.h" />
+    <ClInclude Include="WinService\WinServiceProc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GB28181.Dependency\Common\ControllableThread.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Log\Log.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemBlock.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPool.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MemPoolUnit.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMap.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\MMapFile.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Memory\SharedVarQueue.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\Module.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQ.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQS.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\Module\Router.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\SDPParser\SDPParser.cpp" />
+    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Main\MainThread.cpp" />
+    <ClCompile Include="RegMgrCom\SipDomain.cpp" />
+    <ClCompile Include="RegMgrCom\UASSipRegMgr.cpp" />
+    <ClCompile Include="SIPConsole.cpp" />
+    <ClCompile Include="SipRoute\SipServiceRelay.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SipServiceCom\SIPService.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WinService\WinService.cpp" />
+    <ClCompile Include="WinService\WinServiceProc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eXosip\platform\vsnet\eXosip.vcxproj">
+      <Project>{4ea67539-9ee9-4065-bd39-87e517fd8262}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GBUtils\GBUtils.vcxproj">
+      <Project>{8abf328a-9e7e-468d-affa-22ece37aca5f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\osip\platform\vsnet\osip2.vcxproj">
+      <Project>{85255507-5d16-4218-85e2-f683bb2f04da}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\osip\platform\vsnet\osipparser2.vcxproj">
+      <Project>{44f46b7e-0e51-4304-9735-330dfbab41e5}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

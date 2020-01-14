@@ -1,0 +1,95 @@
+    m_pCUATcp = new CUACTCP();
+class CUACTCP:public CSipInterface
+
+
+
+	int nRet = m_pCUATcp->SendInvite(nStreamerType,			//real stream
+									  UDP_TRANS,			//UDP
+									  CLog::UnicodeToANSI(pstrDVRID).c_str(),
+									  CLog::UnicodeToANSI(pstrChannelID).c_str(),
+									  szLocalIP,
+									  nLocalPorts,
+									  pStreamer,
+									  fpClientRealDataCallback,
+									  ppRTPTrans, tmStart, tmEnd);
+
+int CUACTCP::SendInvite(int nOperate, int nProType, const char *pstrDeviceID, 
+						const char *pstrChannelID, const char *pstrRecvIP, int nRecvPort[2], 
+						void *pStreamer, ClientRealData fpClientHandleRealData, void **ppRTPTrans, char *ptmStart, char *ptmEnd)
+
+
+	CDataStream dataStream((BYTE*)szInviteBuf, INVITE_MSG_SIZE);
+
+	dataStream.InputData(4, &nCmdID, 4);						//command id
+	dataStream.InputData(-1, &m_unSeq, 4);						//sequence
+	dataStream.InputData(-1, &nOperate, 4);						//nOperate
+	dataStream.InputData(-1, pstrDeviceID, ID_BUFFER_SIZE);		//Remove Device ID
+	dataStream.InputData(-1, pstrChannelID, ID_BUFFER_SIZE);	//Media ID
+	dataStream.InputData(-1, &nProType, 4);						//media transmission type
+	dataStream.InputData(-1, pstrRecvIP, IP_BUFFER_SIZE);		//Recv IP
+	dataStream.InputData(-1, &(nRecvPort[0]), 4);				//Recv Port
+	dataStream.InputData(-1, &(nRecvPort[1]), 4);				//Recv Port
+	//dataStream.InputData(-1, &(nRecvPort[2]), 4);				//Recv Port
+	//dataStream.InputData(-1, &(nRecvPort[3]), 4);				//Recv Port
+	dataStream.InputData(-1, ptmStart, TIME_LEN+1);			
+	dataStream.InputData(-1, ptmEnd, TIME_LEN+1);			
+
+	dataStream.InputData(-1, "#", 1);						//finish symbolthis
+
+	g_objLog.LogoutDebug(k_LOG_DLL, "%s Size=%d, CmdID=%d, Seq=%d, Operate=%d, DeviceID=%s, MediaID=%s\n", __FUNCTION__, 
+								dataStream.GetLastPos(), nCmdID, m_unSeq, nOperate, 
+								pstrDeviceID, pstrChannelID);
+
+	if(!m_pSocket->SendData(szInviteBuf, dataStream.GetLastPos()))
+	{
+		g_objLog.LogoutDebug(k_LOG_DLL, "%s 媒体流协商失败\n", __FUNCTION__);
+		return -1;
+	}
+
+
+----------------------------------------
+
+	lpInviteParam_t lMsg = m_objInviteList.NewWaitMsg();
+	lMsg->nCmdID = INVITERES_CMD;
+	lMsg->unSeq = m_unSeq;
+	strcpy_s(lMsg->strDstID, pstrDeviceID);
+	lMsg->pStreamer = pStreamer;
+	lMsg->fpClientHandleRealData = fpClientHandleRealData;
+	lMsg->nRecvPort[0] = nRecvPort[0];
+	lMsg->nRecvPort[1] = nRecvPort[2]; 
+	lMsg->ppRTPTrans = ppRTPTrans;
+	lMsg->nOperate = nOperate;
+
+
+
+
+int CUACTCP::OnInviteRes()
+{
+
+		lpInviteParam_t pWaitMsg = m_objInviteList.GetWaitMsg(nCmdID, unSeq);
+	
+if(0 > CreateMediaStreamer(0, pWaitMsg->nOperate, stSpdStack.connect_info.address, nPort, pWaitMsg))
+				{
+					g_objLog.LogoutDebug(k_LOG_DLL, "%s 创建媒体流失败 connect err pWaitMsg->nOperate = %d addr = %s port = %d\n", __FUNCTION__,pWaitMsg->nOperate, stSpdStack.connect_info.address.c_str(),nPort);
+					return CREATE_MEDIASTREAMER_ERROR;
+				}
+
+
+CreateMediaStreamer....
+
+	CMediaStreamer * pMediaStreamer = new CMediaStreamer();
+	return  pMediaStreamer->Init(nProtocolType, nStreamerType, strRemoteIP, nRemotePort, pInviteInfo);
+
+				SetPlayBackID(pWaitMsg->ppRTPTrans, nCid, nDid);
+	if(*ppRTPTrans)
+	{
+		CMediaStreamer* pRTP = static_cast<CMediaStreamer *>(*ppRTPTrans);
+
+		pRTP->SetPlayBackID(nCid, nDid);
+		g_objLog.LogoutDebug(k_LOG_DLL, "%s cid:%d, did:%d\n", __FUNCTION__, nCid, nDid);
+	}
+
+
+
+map<void*, nCid, nDid>
+get,set

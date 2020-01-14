@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="MainThread.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="LoginHandler.cpp" />
+    <ClCompile Include="SipTask\InviteTask.cpp">
+      <Filter>Siptask</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskBase\Task.cpp">
+      <Filter>TaskBase</Filter>
+    </ClCompile>
+    <ClCompile Include="SipTask\QueryTask.cpp">
+      <Filter>Siptask</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskBase\Module.cpp">
+      <Filter>TaskBase</Filter>
+    </ClCompile>
+    <ClCompile Include="SipSimulator.cpp" />
+    <ClCompile Include="Common\SipParser.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainThread.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SipSimulator.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="LoginHandler.h" />
+    <ClInclude Include="SipTask\InviteTask.h">
+      <Filter>Siptask</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskBase\Task.h">
+      <Filter>TaskBase</Filter>
+    </ClInclude>
+    <ClInclude Include="SipTask\QueryTask.h">
+      <Filter>Siptask</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskBase\Module.h">
+      <Filter>TaskBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\SipParser.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SipSimulator.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Siptask">
+      <UniqueIdentifier>{8a58a20e-303b-4b1a-854d-f6fcbe1c9bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TaskBase">
+      <UniqueIdentifier>{433e400a-86b6-4a87-870e-dbfeb7f3cd28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{af8ab98d-115e-4635-b8cf-d3aca5843c69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
