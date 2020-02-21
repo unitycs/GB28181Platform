@@ -1,3 +1,5 @@
-# gb28181-2016
+# GB28181-2014
 
-GB28181-2016 C++ Version 
+GB28181-2014 C++ Version 
+
+Based On exosip and osip.
