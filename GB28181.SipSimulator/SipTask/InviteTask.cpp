@@ -52,11 +52,11 @@ void CInviteTask::Init()
 
 	InitParam();
 
-	// ×¢²á¹¤×÷Ïß³Ì
+	// æ³¨å†Œå·¥ä½œçº¿ç¨‹
 	RegisterProc(pfnSendProc, this, nConc);
 }
 
-// ÊÍ·ÅÕ¼ÓÃÄÚ´æ
+// é‡Šæ”¾å ç”¨å†…å­˜
 void CInviteTask::Cleanup()
 {
 
@@ -83,9 +83,9 @@ void CInviteTask::Cleanup()
 //	LARGE_INTEGER	liPerfFreq	= {0};
 //	LARGE_INTEGER	liPerfCur	= {0};
 //	int				nOweSum		= 0;
-//	int				msSum		= nMaxPerSec / 1000.0;		//Ã¿ºÁÃë·¢ËÍµÄ¸öÊı
+//	int				msSum		= nMaxPerSec / 1000.0;		//æ¯æ¯«ç§’å‘é€çš„ä¸ªæ•°
 //
-//	// ³õÊ¼»¯Í¨ĞÅ²ÎÊı
+//	// åˆå§‹åŒ–é€šä¿¡å‚æ•°
 //	timeout.tv_sec = 5;
 //	timeout.tv_usec = 0;
 //	gen_call_id(CALL_ID);
@@ -95,43 +95,43 @@ void CInviteTask::Cleanup()
 //	sock = pModule->m_sock;
 //
 //
-//	// ¼ÆÊ±¿ªÊ¼
+//	// è®¡æ—¶å¼€å§‹
 //	QueryPerformanceFrequency(&liPerfFreq); 
 //
-//	// ½øÈë·¢ËÍÑ­»·
+//	// è¿›å…¥å‘é€å¾ªç¯
 //	for (int i = 0; i < nMaxCount; i++)
 //	{
 //		QueryPerformanceCounter(&liPerfCur);
 //		int nStartTime = (int)(liPerfCur.QuadPart * 10000 / liPerfFreq.QuadPart);
 //
-//		// ³õÊ¼»¯±¾´ÎÊÂÎñĞÅÏ¢
+//		// åˆå§‹åŒ–æœ¬æ¬¡äº‹åŠ¡ä¿¡æ¯
 //		sprintf_s(buf, invite_req, CALL_ID, TAG, BRANCH);
 //
-//		// ·¢ËÍµÇÂ¼ÏûÏ¢
+//		// å‘é€ç™»å½•æ¶ˆæ¯
 //		sendto(sock, buf, strlen(buf), 0, (const SOCKADDR *) &sAddr, sizeof(sAddr));
 //		
-//		// µÈ´ıµÇÂ¼Ó¦´ğ
+//		// ç­‰å¾…ç™»å½•åº”ç­”
 //		FD_ZERO(&m_set);
 //		FD_SET(sock, &m_set);
 //		ret = select(0, &m_set, NULL, NULL, &timeout);
 //		if (ret == 0)
 //		{
-//			// ³¬Ê±ÎŞÓ¦´ğ
-//			printf("µÈ´ıµÇÂ¼ÇëÇóÓ¦´ğ³¬¹ı%dÃëÖÓ£¬Ïß³ÌÍË³ö£¡\n", timeout.tv_sec);
+//			// è¶…æ—¶æ— åº”ç­”
+//			printf("ç­‰å¾…ç™»å½•è¯·æ±‚åº”ç­”è¶…è¿‡%dç§’é’Ÿï¼Œçº¿ç¨‹é€€å‡ºï¼\n", timeout.tv_sec);
 //			break;
 //		}
 //		else if (ret = SOCKET_ERROR)
 //		{
-//			// Í¨ĞÅÊ§°Ü
-//			printf("µÈ´ıµÇÂ¼ÇëÇóÓ¦´ğÍ¨ĞÅ¹ÊÕÏ£¬Ïß³ÌÍË³ö£¡\n");
+//			// é€šä¿¡å¤±è´¥
+//			printf("ç­‰å¾…ç™»å½•è¯·æ±‚åº”ç­”é€šä¿¡æ•…éšœï¼Œçº¿ç¨‹é€€å‡ºï¼\n");
 //			break;
 //		}
 //
-//		// ½ÓÊÕµÇÂ¼Ó¦´ğ
+//		// æ¥æ”¶ç™»å½•åº”ç­”
 //		recvfrom(sock, buf, sizeof(buf), 0, (SOCKADDR *) &sAddr, &nRecv);
 //		parse_rtag(buf, RTAG);
 //
-//		// ·¢ËÍµÇÂ¼Ó¦´ğÈ·ÈÏ
+//		// å‘é€ç™»å½•åº”ç­”ç¡®è®¤
 //		sprintf_s(buf, invite_ack, CALL_ID, TAG, RTAG, BRANCH);
 //		sendto(sock, buf, strlen(buf), 0, (const SOCKADDR *) &sAddr, sizeof(sAddr));
 //
@@ -145,8 +145,8 @@ void CInviteTask::Cleanup()
 //			QueryPerformanceCounter(&liPerfCur);
 //			int nCurTime = (int)(liPerfCur.QuadPart* 10000 / liPerfFreq.QuadPart);
 //
-//			// Sleep(1)Êµ¼ÊĞİÃßÊ±¼ä»á³¬¹ı1ºÁÃ×
-//			// È¡µÃÊµ¼ÊµÄĞİÃßÊ±¼ä£¬¼ÆËã´ËÊ±¼äÄÚÓ¦¸Ã¹¤×÷µÄ´ÎÊı
+//			// Sleep(1)å®é™…ä¼‘çœ æ—¶é—´ä¼šè¶…è¿‡1æ¯«ç±³
+//			// å–å¾—å®é™…çš„ä¼‘çœ æ—¶é—´ï¼Œè®¡ç®—æ­¤æ—¶é—´å†…åº”è¯¥å·¥ä½œçš„æ¬¡æ•°
 //			nOweSum = ((nCurTime - nEndTime) * msSum) / 10.0;
 //		}
 //		else
