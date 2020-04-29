@@ -44,7 +44,7 @@
     <ClInclude Include="SdpParser.h">
       <Filter>HeadFiles</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h">
+    <ClInclude Include="..\GB28181.Deps\tinyxml\tinyxml2.h">
       <Filter>Dependency</Filter>
     </ClInclude>
   </ItemGroup>
@@ -79,7 +79,7 @@
     <ClCompile Include="SdpParser.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+    <ClCompile Include="..\GB28181.Deps\tinyxml\tinyxml2.cpp">
       <Filter>Dependency</Filter>
     </ClCompile>
   </ItemGroup>

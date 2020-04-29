@@ -24,46 +24,46 @@
     <ClCompile Include="SipServiceCom\SIPService.cpp">
       <Filter>SipService</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+    <ClCompile Include="..\GB28181.Deps\tinyxml\tinyxml2.cpp">
       <Filter>Common\Utils\TinyXml2</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\SDPParser\SDPParser.cpp">
+    <ClCompile Include="..\GB28181.Deps\SDPParser\SDPParser.cpp">
       <Filter>Common\SDPParser</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Log\Log.cpp">
+    <ClCompile Include="..\GB28181.Deps\Log\Log.cpp">
       <Filter>Common\Utils\Log</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Module\Module.cpp">
+    <ClCompile Include="..\GB28181.Deps\Module\Module.cpp">
       <Filter>Module</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQ.cpp">
+    <ClCompile Include="..\GB28181.Deps\Module\ModuleWithIQ.cpp">
       <Filter>Module</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQS.cpp">
+    <ClCompile Include="..\GB28181.Deps\Module\ModuleWithIQS.cpp">
       <Filter>Module</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Module\Router.cpp">
+    <ClCompile Include="..\GB28181.Deps\Module\Router.cpp">
       <Filter>Module</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemBlock.cpp">
+    <ClCompile Include="..\GB28181.Deps\Memory\MemBlock.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemPool.cpp">
+    <ClCompile Include="..\GB28181.Deps\Memory\MemPool.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemPoolUnit.cpp">
+    <ClCompile Include="..\GB28181.Deps\Memory\MemPoolUnit.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Memory\MMap.cpp">
+    <ClCompile Include="..\GB28181.Deps\Memory\MMap.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Memory\MMapFile.cpp">
+    <ClCompile Include="..\GB28181.Deps\Memory\MMapFile.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Memory\SharedVarQueue.cpp">
+    <ClCompile Include="..\GB28181.Deps\Memory\SharedVarQueue.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\GB28181.Dependency\Common\ControllableThread.cpp">
+    <ClCompile Include="..\GB28181.Deps\Common\ControllableThread.cpp">
       <Filter>Common</Filter>
     </ClCompile>
   </ItemGroup>
@@ -108,73 +108,73 @@
     <ClInclude Include="SipServiceCom\SIPUnifiedMsg.h">
       <Filter>SipService</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h">
+    <ClInclude Include="..\GB28181.Deps\tinyxml\tinyxml2.h">
       <Filter>Common\Utils\TinyXml2</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Json\json.hpp">
+    <ClInclude Include="..\GB28181.Deps\Json\json.hpp">
       <Filter>Common\Utils\Json</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\SDPParser\SDPParser.h">
+    <ClInclude Include="..\GB28181.Deps\SDPParser\SDPParser.h">
       <Filter>Common\SDPParser</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Log\ErrorMessage.h">
+    <ClInclude Include="..\GB28181.Deps\Log\ErrorMessage.h">
       <Filter>Common\Utils\Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Log\Log.h">
+    <ClInclude Include="..\GB28181.Deps\Log\Log.h">
       <Filter>Common\Utils\Log</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Module\Module.h">
+    <ClInclude Include="..\GB28181.Deps\Module\Module.h">
       <Filter>Module</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQ.h">
+    <ClInclude Include="..\GB28181.Deps\Module\ModuleWithIQ.h">
       <Filter>Module</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQS.h">
+    <ClInclude Include="..\GB28181.Deps\Module\ModuleWithIQS.h">
       <Filter>Module</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Module\Router.h">
+    <ClInclude Include="..\GB28181.Deps\Module\Router.h">
       <Filter>Module</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\BigFile.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\BigFile.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\MapWithLock.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\MapWithLock.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemBlock.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\MemBlock.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemPool.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\MemPool.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemPoolUnit.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\MemPoolUnit.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\MMap.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\MMap.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\MMapFile.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\MMapFile.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\Queue.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\Queue.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\SharedVarQueue.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\SharedVarQueue.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Memory\SimpleQueue.h">
+    <ClInclude Include="..\GB28181.Deps\Memory\SimpleQueue.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Common\common.h">
+    <ClInclude Include="..\GB28181.Deps\Common\common.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Common\ControllableThread.h">
+    <ClInclude Include="..\GB28181.Deps\Common\ControllableThread.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Common\TimeLimitMap.h">
+    <ClInclude Include="..\GB28181.Deps\Common\TimeLimitMap.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\GB28181.Dependency\Common\AppSetting.h">
+    <ClInclude Include="..\GB28181.Deps\Common\AppSetting.h">
       <Filter>HeadFiles</Filter>
     </ClInclude>
   </ItemGroup>

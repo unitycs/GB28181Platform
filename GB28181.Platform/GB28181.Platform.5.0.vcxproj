@@ -110,7 +110,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;SDK_VERSION_5_0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Deps\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -131,7 +131,7 @@ copy /y $(OutputPath)$(TargetName).pdb "%dstdir%$(TargetName).pdb"</Command>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Deps\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -162,7 +162,7 @@ copy /y $(OutputPath)GB28181.PLTD.DeviceInfoMgr.pdb "%dstdir%GB28181.PLTD.Device
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;WIN_SERVICE;SDK_VERSION_5_0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Deps\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -212,7 +212,7 @@ cd /d $(MSBuildProjectDirectory)</Command>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WIN_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Dependency\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\WebServiceSDK\;$(ProjectDir)..\GB28181.Deps\;$(ProjectDir)..\GBUtils\;$(ProjectDir)..\GB28181.SipCom\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -240,33 +240,33 @@ copy /y $(OutputPath)GB28181.PLTD.DeviceInfoMgr.pdb "%dstdir%GB28181.PLTD.Device
     <None Include="..\DeviceConfiguration.json" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\GB28181.Dependency\Common\AppSetting.h" />
-    <ClInclude Include="..\GB28181.Dependency\Common\common.h" />
-    <ClInclude Include="..\GB28181.Dependency\Common\Utils.h" />
-    <ClInclude Include="..\GB28181.Dependency\Log\ErrorMessage.h" />
-    <ClInclude Include="..\GB28181.Dependency\Log\Log.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\BigFile.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MapWithLock.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemBlock.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemPool.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemPoolUnit.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MMap.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MMapFile.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\Queue.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\SharedVarQueue.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\SimpleQueue.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\Module.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQ.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQS.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\Router.h" />
-    <ClInclude Include="..\GB28181.Dependency\SDPParser\SDPParser.h" />
-    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataFormat.hpp" />
-    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataPkgMaker.hpp" />
-    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataPkgParser.h" />
-    <ClInclude Include="..\GB28181.Dependency\Socket\RawDataStream.hpp" />
-    <ClInclude Include="..\GB28181.Dependency\Socket\SmartSocket.h" />
-    <ClInclude Include="..\GB28181.Dependency\Socket\SocketDataMgr.hpp" />
-    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h" />
+    <ClInclude Include="..\GB28181.Deps\Common\AppSetting.h" />
+    <ClInclude Include="..\GB28181.Deps\Common\common.h" />
+    <ClInclude Include="..\GB28181.Deps\Common\Utils.h" />
+    <ClInclude Include="..\GB28181.Deps\Log\ErrorMessage.h" />
+    <ClInclude Include="..\GB28181.Deps\Log\Log.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\BigFile.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MapWithLock.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MemBlock.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MemPool.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MemPoolUnit.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MMap.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MMapFile.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\Queue.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\SharedVarQueue.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\SimpleQueue.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\Module.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\ModuleWithIQ.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\ModuleWithIQS.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\Router.h" />
+    <ClInclude Include="..\GB28181.Deps\SDPParser\SDPParser.h" />
+    <ClInclude Include="..\GB28181.Deps\Socket\RawDataFormat.hpp" />
+    <ClInclude Include="..\GB28181.Deps\Socket\RawDataPkgMaker.hpp" />
+    <ClInclude Include="..\GB28181.Deps\Socket\RawDataPkgParser.h" />
+    <ClInclude Include="..\GB28181.Deps\Socket\RawDataStream.hpp" />
+    <ClInclude Include="..\GB28181.Deps\Socket\SmartSocket.h" />
+    <ClInclude Include="..\GB28181.Deps\Socket\SocketDataMgr.hpp" />
+    <ClInclude Include="..\GB28181.Deps\tinyxml\tinyxml2.h" />
     <ClInclude Include="DataManager\DataStore.h" />
     <ClInclude Include="DataManager\DataStoreBase.h" />
     <ClInclude Include="DataManager\DB\db_tabledef.h" />
@@ -326,21 +326,21 @@ copy /y $(OutputPath)GB28181.PLTD.DeviceInfoMgr.pdb "%dstdir%GB28181.PLTD.Device
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\GB28181.Dependency\Log\Log.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemBlock.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemPool.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemPoolUnit.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MMap.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MMapFile.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\SharedVarQueue.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\Module.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQ.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQS.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\Router.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\SDPParser\SDPParser.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Socket\RawDataPkgParser.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Socket\SmartSocket.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+    <ClCompile Include="..\GB28181.Deps\Log\Log.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MemBlock.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MemPool.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MemPoolUnit.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MMap.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MMapFile.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\SharedVarQueue.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\Module.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\ModuleWithIQ.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\ModuleWithIQS.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\Router.cpp" />
+    <ClCompile Include="..\GB28181.Deps\SDPParser\SDPParser.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Socket\RawDataPkgParser.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Socket\SmartSocket.cpp" />
+    <ClCompile Include="..\GB28181.Deps\tinyxml\tinyxml2.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">NotUsing</PrecompiledHeader>

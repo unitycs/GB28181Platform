@@ -99,7 +99,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Deps\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
@@ -125,7 +125,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Deps\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
@@ -146,7 +146,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;WIN_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Deps\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -168,7 +168,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;OSIP_MT;NEUSOFT_OPTIMIZE;TIME_OUTPUT;HAVE_DICT_DICT_H;NEUSOFT_OPTIMIZE_LIST;NEUSOFT_OPTIMIZE_HASH;WIN_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Dependency\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\eXosip\include;$(ProjectDir)..\osip\include;$(ProjectDir)..\GBUtils;$(ProjectDir)..\GB28181.Deps\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -185,29 +185,29 @@
     <None Include="..\Project.json" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\GB28181.Dependency\Common\AppSetting.h" />
-    <ClInclude Include="..\GB28181.Dependency\Common\common.h" />
-    <ClInclude Include="..\GB28181.Dependency\Common\ControllableThread.h" />
-    <ClInclude Include="..\GB28181.Dependency\Common\TimeLimitMap.h" />
-    <ClInclude Include="..\GB28181.Dependency\Json\json.hpp" />
-    <ClInclude Include="..\GB28181.Dependency\Log\ErrorMessage.h" />
-    <ClInclude Include="..\GB28181.Dependency\Log\Log.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\BigFile.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MapWithLock.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemBlock.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemPool.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MemPoolUnit.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MMap.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\MMapFile.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\Queue.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\SharedVarQueue.h" />
-    <ClInclude Include="..\GB28181.Dependency\Memory\SimpleQueue.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\Module.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQ.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\ModuleWithIQS.h" />
-    <ClInclude Include="..\GB28181.Dependency\Module\Router.h" />
-    <ClInclude Include="..\GB28181.Dependency\SDPParser\SDPParser.h" />
-    <ClInclude Include="..\GB28181.Dependency\tinyxml\tinyxml2.h" />
+    <ClInclude Include="..\GB28181.Deps\Common\AppSetting.h" />
+    <ClInclude Include="..\GB28181.Deps\Common\common.h" />
+    <ClInclude Include="..\GB28181.Deps\Common\ControllableThread.h" />
+    <ClInclude Include="..\GB28181.Deps\Common\TimeLimitMap.h" />
+    <ClInclude Include="..\GB28181.Deps\Json\json.hpp" />
+    <ClInclude Include="..\GB28181.Deps\Log\ErrorMessage.h" />
+    <ClInclude Include="..\GB28181.Deps\Log\Log.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\BigFile.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MapWithLock.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MemBlock.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MemPool.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MemPoolUnit.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MMap.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\MMapFile.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\Queue.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\SharedVarQueue.h" />
+    <ClInclude Include="..\GB28181.Deps\Memory\SimpleQueue.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\Module.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\ModuleWithIQ.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\ModuleWithIQS.h" />
+    <ClInclude Include="..\GB28181.Deps\Module\Router.h" />
+    <ClInclude Include="..\GB28181.Deps\SDPParser\SDPParser.h" />
+    <ClInclude Include="..\GB28181.Deps\tinyxml\tinyxml2.h" />
     <ClInclude Include="Common\Utils.h" />
     <ClInclude Include="Main\MainThread.h" />
     <ClInclude Include="RegMgrCom\EventTimer.hpp" />
@@ -224,20 +224,20 @@
     <ClInclude Include="WinService\WinServiceProc.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\GB28181.Dependency\Common\ControllableThread.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Log\Log.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemBlock.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemPool.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MemPoolUnit.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MMap.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\MMapFile.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Memory\SharedVarQueue.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\Module.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQ.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\ModuleWithIQS.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\Module\Router.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\SDPParser\SDPParser.cpp" />
-    <ClCompile Include="..\GB28181.Dependency\tinyxml\tinyxml2.cpp">
+    <ClCompile Include="..\GB28181.Deps\Common\ControllableThread.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Log\Log.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MemBlock.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MemPool.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MemPoolUnit.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MMap.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\MMapFile.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Memory\SharedVarQueue.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\Module.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\ModuleWithIQ.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\ModuleWithIQS.cpp" />
+    <ClCompile Include="..\GB28181.Deps\Module\Router.cpp" />
+    <ClCompile Include="..\GB28181.Deps\SDPParser\SDPParser.cpp" />
+    <ClCompile Include="..\GB28181.Deps\tinyxml\tinyxml2.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">NotUsing</PrecompiledHeader>
