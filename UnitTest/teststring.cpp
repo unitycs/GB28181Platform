@@ -1,4 +1,4 @@
-#include <string>
+ï»¿#include <string>
 #include <iostream>
 #include "catch.hpp"
 
@@ -22,16 +22,16 @@ SCENARIO("test smartzoom for ptz dragZoom", "[SmartZoom][Approx]") {
 	int g_videoWidth = 1920, g_videoHeight = 1080;
 	//CHECK(szScale != nullptr);
 
-	GIVEN("»ù±¾µÄÆÁÄ»²ÎÊıÅäÖÃ1920*1080 ") {
+	GIVEN("åŸºæœ¬çš„å±å¹•å‚æ•°é…ç½®1920*1080 ") {
 
 		int screenWidth = 1920, screenHeight = 1080;
 
-		WHEN("[Group1]ÄÃµ½µ½Êµ¼ÊÇøÓòµÄ×ø±ê²ÎÊıÖµ×é") {
+		WHEN("[Group1]æ‹¿åˆ°åˆ°å®é™…åŒºåŸŸçš„åæ ‡å‚æ•°å€¼ç»„") {
 
 			int point_x = 842, point_y = 182;
 			int areaWidth = 289, areaHeigh = 183;
 
-			THEN("°´Ë³Ğò¼ÆËã³öÄ¿±êÇøÓòµÄ²ÎÊıÖµ") {
+			THEN("æŒ‰é¡ºåºè®¡ç®—å‡ºç›®æ ‡åŒºåŸŸçš„å‚æ•°å€¼") {
 
 				int x = (point_x - (areaWidth*1.0 / 2)) * g_videoWidth / screenWidth;
 				int y = (point_y - (areaHeigh*1.0 / 2)) * g_videoHeight / screenHeight;
@@ -51,7 +51,7 @@ SCENARIO("test smartzoom for ptz dragZoom", "[SmartZoom][Approx]") {
 			int point_x = 842, point_y = 182;
 			int areaWidth = 289, areaHeigh = 183;
 			
-			THEN("ÓÃÀ¨ºÅ±í´ï×¼È·µÄ¼ÆËãÓïÒå£¬ÔÙ´Î¼ÆËã³öÄ¿±ê²ÎÊıÖµ²¢±È½Ï") {
+			THEN("ç”¨æ‹¬å·è¡¨è¾¾å‡†ç¡®çš„è®¡ç®—è¯­ä¹‰ï¼Œå†æ¬¡è®¡ç®—å‡ºç›®æ ‡å‚æ•°å€¼å¹¶æ¯”è¾ƒ") {
 
 				int x = (point_x - (areaWidth*1.0 / 2)) * (g_videoWidth / screenWidth);
 				int y = (point_y - (areaHeigh*1.0 / 2)) * (g_videoHeight / screenHeight);
