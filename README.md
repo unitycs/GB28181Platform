@@ -8,3 +8,7 @@ Based On exosip and osip.
 
 + [GB28181 Solution](https://github.com/GB28181)
 + [onvif](https://github.com/use-go/onvif)
+
+## License 
+
+All source code was authorized under GPL v3 and later
