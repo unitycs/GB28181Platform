@@ -11,4 +11,4 @@ Based On exosip and osip.
 
 ## License 
 
-All source code was authorized under GPL v3 and later
+All source code was authorised under GPL v3 and later
